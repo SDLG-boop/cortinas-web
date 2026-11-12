@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecoCortinas - Venta e Instalación</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Librería para conectar con Supabase -->
+    
+</head>
+<body>
+
+    <header>
+        <h1>DecoCortinas</h1>
+        <p>Venta e instalación profesional a domicilio</p>
+    </header>
+
+    <div class="contenedor-principal">
+        <main class="catalogo">
+            <h2>Nuestros Productos y Servicios</h2>
+            <div id="lista-productos" class="grid-productos"></div>
+        </main>
+
+        <aside class="carrito">
+            <h2>Tu Cotización</h2>
+            <ul id="items-carrito">
+                <li class="vacio">Aún no has agregado productos</li>
+            </ul>
+            
+            <div class="resumen">
+                <p>Total estimado: <strong id="total-precio">S/ 0.00</strong></p>
+                
+                <!-- Nuevo: Dato del cliente -->
+                <input type="text" id="nombre-cliente" placeholder="Tu nombre y WhatsApp" class="input-cliente">
+                
+                <button id="btn-vaciar" class="btn-secundario">Vaciar carrito</button>
+                <button id="btn-cotizar" class="btn-primario">Enviar Pedido Real</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
